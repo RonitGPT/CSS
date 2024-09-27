@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Combinator Selectors </title>
+
+    <style>
+   
+   /* DESENDANT SELECTOR*/ 
+
+        /* DESENDENT SELECTOR :- Applicable for all child and grand child */
+
+       /* div p{
+            color: rgb(227, 16, 16);
+        }  
+
+        /*CHILD SELECTOR*/
+
+        /* CHILD SELECTOR :- Applicable for all child and NOT grand child */
+
+        /* div >p {
+            color: yellowgreen;
+        } */ 
+
+        /* First SIBLING */
+
+        /* First SIBLING :- Applicable for FIRST SIBLING ONLY */
+
+        div +p {
+            color: blueviolet;
+        }  
+
+         /* ALL SIBLING */
+        
+         /* ALL SIBLING :- Applicable for ALL SIBLING 
+
+        div ~p {
+            color: blue;
+        }  */
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p> This is First Paragh</p>   <!---This is First child-->
+        <p> This is Second Paragh</p>  <!----This is Second Child-->
+        <section>
+            <p>This is Third Paragh </p>  <!----This is Grand Child-->
+        </section>    
+    </div>
+
+    <p> This is First Paragh after Div </p> <!----This is First Sibling-->
+    <p> This is Second Paragh After Div</p> <!----This is Second  Sibling-->
+
+</html>
